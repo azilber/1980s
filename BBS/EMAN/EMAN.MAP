@@ -1,0 +1,746 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 04455H 04456H _TEXT              CODE
+ 04456H 079ADH 03558H EMAN_TEXT          CODE
+ 079AEH 07A9CH 000EFH MSDOS_TEXT         CODE
+ 07A9DH 083B1H 00915H RS232_TEXT         CODE
+ 083B2H 0943AH 01089H BIOSPORT_TEXT      CODE
+ 0943BH 09DE8H 009AEH FOSSIL_TEXT        CODE
+ 09DF0H 09DF0H 00000H _FARDATA           FAR_DATA
+ 09DF0H 09DF3H 00004H STDTR5_FAR         FAR_DATA
+ 09E00H 09E03H 00004H STDTR6_FAR         FAR_DATA
+ 09E10H 09E13H 00004H STDTR7_FAR         FAR_DATA
+ 09E20H 09E23H 00004H STDTR8_FAR         FAR_DATA
+ 09E30H 09E31H 00002H STDTR9_FAR         FAR_DATA
+ 09E40H 09E40H 00000H _FARBSS            FAR_BSS
+ 09E40H 09E40H 00000H _OVERLAY_          OVRINFO
+ 09E40H 09E40H 00000H _1STUB_            STUBSEG
+ 09E40H 0C2EBH 024ACH _DATA              DATA
+ 0C2ECH 0C2EDH 00002H _CVTSEG            DATA
+ 0C2EEH 0C2F3H 00006H _SCNSEG            DATA
+ 0C2F4H 0C2F4H 00000H _CONST             CONST
+ 0C2F4H 0C30BH 00018H _INIT_             INITDATA
+ 0C30CH 0C30CH 00000H _INITEND_          INITDATA
+ 0C30CH 0C30CH 00000H _EXIT_             EXITDATA
+ 0C30CH 0C30CH 00000H _EXITEND_          EXITDATA
+ 0C30CH 0CF0FH 00C04H _BSS               BSS
+ 0CF10H 0CF10H 00000H _BSSEND            BSSEND
+ 0CF10H 0CF8FH 00080H _STACK             STACK
+
+  Address         Publics by Name
+
+ 0000:3C45       operator delete(void far*)
+ 0000:3C81       operator new(unsigned int)
+ 0445:25E5       armory()
+ 0445:25F9       bank()
+ 0445:25EF       bazaar()
+ 09E4:1DEC       BIOSPort::
+ 083B:0002       BIOSPort::BIOSPort(RS232PortName,long,char,int,int,int,int,int,int,int)
+ 083B:0108       BIOSPort::BIOSPort()
+ 083B:017D       BIOSPort::~BIOSPort()
+ 083B:0654       BIOSPort::BreakDetect(int)
+ 083B:049A       BIOSPort::Cd()
+ 083B:0540       BIOSPort::Cts()
+ 083B:0593       BIOSPort::Dsr()
+ 083B:079E       BIOSPort::FormatDebugOutput(char far*,int)
+ 083B:06C2       BIOSPort::FramingError(int)
+ 083B:0730       BIOSPort::HardwareOverrunError(int)
+ 083B:05E6       BIOSPort::ParityError(int)
+ 083B:08D0       BIOSPort::read_buffer(char far*,unsigned int)
+ 083B:037D       BIOSPort::read_byte()
+ 083B:04ED       BIOSPort::Ri()
+ 083B:0A81       BIOSPort::RXSpaceUsed()
+ 083B:045D       BIOSPort::Set(long,int,int,int)
+ 083B:0A2E       BIOSPort::TXSpaceFree()
+ 083B:0985       BIOSPort::write_buffer(char far*,unsigned int)
+ 083B:0404       BIOSPort::write_byte(int)
+ 083B:01AA       BIOSPort::write_settings()
+ 0445:19BF       bullet()
+ 079A:009D       Bus()
+ 0445:1C61       charac()
+ 0445:0949       choice(char)
+ 0445:0B4C       colorstring(char far*,int)
+ 0445:2FB3       coral()
+ 09E4:1D70       EBIOSPort::
+ 083B:0AD4       EBIOSPort::EBIOSPort(RS232PortName,long,char,int,int,int,int,int,int,int)
+ 083B:0BD7       EBIOSPort::~EBIOSPort()
+ 083B:0FA7       EBIOSPort::Break(long)
+ 083B:0F21       EBIOSPort::Dtr(int)
+ 083B:0C13       EBIOSPort::FormatDebugOutput(char far*,int)
+ 083B:0C7F       EBIOSPort::read_settings()
+ 083B:0F64       EBIOSPort::Rts(int)
+ 083B:1021       EBIOSPort::Set(long,int,int,int)
+ 083B:0D13       EBIOSPort::write_settings()
+ 0445:2FB8       encode(char)
+ 0445:1A1E       end()
+ 09E4:1F22       fossil::
+ 0943:006E       FOSSIL::FOSSIL(RS232PortName,long,char,int,int,int,int,int,int,int)
+ 0943:01EB       FOSSIL::~FOSSIL()
+ 0943:077D       FOSSIL::Break(long)
+ 0943:08A4       FOSSIL::Dtr(int)
+ 0943:0949       FOSSIL::FlushRXBuffer()
+ 0943:0981       FOSSIL::FlushTXBuffer()
+ 0943:0447       FOSSIL::FormatDebugOutput(char far*,int)
+ 0943:08ED       FOSSIL::Peek(void far*,unsigned int)
+ 0943:05B9       FOSSIL::read_buffer(char far*,unsigned int)
+ 0943:085B       FOSSIL::RtsCtsHandshaking(int)
+ 0943:0750       FOSSIL::RXSpaceFree()
+ 0943:0720       FOSSIL::RXSpaceUsed()
+ 0943:0533       FOSSIL::Set(long,int,int,int)
+ 0943:06A3       FOSSIL::TXSpaceFree()
+ 0943:06D0       FOSSIL::TXSpaceUsed()
+ 0943:063C       FOSSIL::write_buffer(char far*,unsigned int)
+ 0943:0570       FOSSIL::write_byte(int)
+ 0943:024D       FOSSIL::write_settings()
+ 0943:0812       FOSSIL::XonXoffHandshaking(int)
+ 0943:000B       fossil_info::fossil_info(int)
+ 0445:1783       help(int)
+ 0445:2FCA       initport()
+ 0445:3412       introansi()
+ 0000:4411       ios::~ios()
+ 09E0:0000       ios::adjustfield
+ 09DF:0000       ios::basefield
+ 09E1:0000       ios::floatfield
+ 09E2:0000       ios::nextbit
+ 09E4:24A4       ios::stdioflush
+ 09E3:0000       ios::usercount
+ 0445:25F4       kill()
+ 0445:25E0       massacar()
+ 0445:0699       menu(int)
+ 0445:1426       play()
+ 0445:13B0       prompt(int)
+ 0445:3539       randomize()
+ 0445:3261       readdoor()
+ 0445:1779       readm()
+ 079A:0015       ReadTime()
+ 09E4:1E68       rs232::
+ 083B:105E       RS232::~RS232()
+ 07A9:081F       RS232::Break(long)
+ 07A9:085F       RS232::Dtr(int)
+ 07A9:0857       RS232::DtrDsrHandshaking(int)
+ 07A9:0098       RS232::ErrorName(int)
+ 0445:3552       RS232::ErrorStatus()
+ 07A9:000D       RS232::FlushRXBuffer()
+ 07A9:082F       RS232::FlushTXBuffer()
+ 07A9:01D5       RS232::FormatDebugOutput(char far*,int)
+ 079A:000E       RS232::IdleFunction()
+ 07A9:086F       RS232::Peek(void far*,unsigned int)
+ 07A9:004A       RS232::Peek()
+ 07A9:0311       RS232::Read(long)
+ 07A9:05EF       RS232::Read(void far*,unsigned int,long)
+ 07A9:06E3       RS232::Read(void far*,unsigned int,long,char far*)
+ 07A9:0867       RS232::Rts(int)
+ 07A9:084F       RS232::RtsCtsHandshaking(int)
+ 07A9:0837       RS232::RXSpaceFree()
+ 07A9:0827       RS232::SoftwareOverrunError(int)
+ 07A9:083F       RS232::TXSpaceUsed()
+ 07A9:03D4       RS232::Write(int,long)
+ 07A9:049A       RS232::Write(void far*,unsigned int,long,char far*)
+ 07A9:0847       RS232::XonXoffHandshaking(int)
+ 0445:2FAE       saor()
+ 0445:19C4       scores()
+ 0445:177E       sendm()
+ 0445:1A19       settings()
+ 07A9:0877       Settings::Adjust(long,int,int,int,int,int,int,int,int)
+ 0000:3C57       set_new_handler(void(far*)())
+ 0445:1381       systemstat()
+ 0445:25EA       weapon()
+ 09E4:0000       DATASEG@
+ 0000:0213       DGROUP@
+ 0000:4126       F_LDIV@
+ 0000:4135       F_LMOD@
+ 0000:412D       F_LUDIV@
+ 0000:413D       F_LUMOD@
+ 0000:410C       F_LXMUL@
+ 0000:41D4       F_PADD@
+ 0000:4203       F_PSUB@
+ 0000:4234       F_SCOPY@
+ 0000:4126       LDIV@
+ 0000:4135       LMOD@
+ 0000:412D       LUDIV@
+ 0000:413D       LUMOD@
+ 0000:410C       LXMUL@
+ 0000:4123       N_LDIV@
+ 0000:4132       N_LMOD@
+ 0000:412A       N_LUDIV@
+ 0000:413A       N_LUMOD@
+ 0000:4250       N_LXMUL@
+ 0000:41D1       N_PADD@
+ 0000:4267       N_PCMP@
+ 0000:4200       N_PSUB@
+ 0000:4231       N_SCOPY@
+ 0000:41D4       PADD@
+ 0000:4203       PSUB@
+ 0000:4234       SCOPY@
+ 0000:01FD       _abort
+ 0000:0217       _access
+ 0000:0252       _atexit
+ 0000:1F97       _atoi
+ 0000:1F22       _atol
+ 0000:027F       _close
+ 0000:02AC       _clrscr
+ 0000:0453       _cprintf
+ 09E4:23AC       _daylight
+ 0000:21D6       _delay
+ 09E4:229F       _directvideo
+ 0000:2217       _div
+ 0000:18B8       _dostounix
+ 09E4:24A0       _environ
+ 0000:2223       _eof
+ 09E4:007F       _errno
+ 0000:0470       _exit
+ 0000:3E4E       _farfree
+ 0000:3F3E       _farmalloc
+ 0000:409E       _farrealloc
+ 0000:05C1       _fclose
+ 0000:09C0       _fdopen
+ 0000:0670       _fflush
+ 0000:235D       _fgetc
+ 0000:2445       _fgetchar
+ 0000:073B       _flushall
+ 0000:0955       _fopen
+ 0000:0F6E       _fputc
+ 0000:10C6       _fputchar
+ 0000:0AF5       _fread
+ 0000:3E4E       _free
+ 0000:0987       _freopen
+ 0000:0B85       _fscanf
+ 0000:0C2D       _fseek
+ 0000:0CAF       _ftell
+ 0000:0CFF       _fwrite
+ 09E4:24E6       _game
+ 0000:2451       _getch
+ 0000:246D       _getche
+ 0000:0D8F       _getdate
+ 0000:24AD       _getenv
+ 0000:0DB5       _gets
+ 0000:0DA2       _gettime
+ 0000:0E3F       _gotoxy
+ 09E4:24D2       _handle_name
+ 0000:030E       _highvideo
+ 09E4:3028       _in
+ 0000:251D       _int86
+ 0000:254E       _int86x
+ 0000:25E7       _ioctl
+ 0000:264D       _isatty
+ 0000:2709       _itoa
+ 0000:0314       _lowvideo
+ 0000:265E       _lseek
+ 0000:2755       _ltoa
+ 0445:0006       _main
+ 0000:3F34       _malloc
+ 0000:277F       _memcpy
+ 0000:27C7       _memset
+ 09E4:3020       _mode
+ 0000:0E8F       _movetext
+ 0000:031A       _normvideo
+ 0000:2813       _open
+ 09E4:302C       _out
+ 09E4:265C       _player
+ 09E4:24CE       _pnum
+ 09E4:00A2       _Port
+ 09E4:0092       _Ports
+ 09E4:00A6       _port_names
+ 0000:0F35       _printf
+ 0000:127F       _putch
+ 0000:12A7       _rand
+ 0000:29AD       _read
+ 0000:4097       _realloc
+ 0000:12CD       _scanf
+ 0000:313C       _segread
+ 0000:315C       _setblock
+ 0000:3178       _setdate
+ 0000:27A3       _setmem
+ 0000:318D       _settime
+ 0000:15FB       _setvbuf
+ 0000:171A       _sleep
+ 09E4:24CC       _SPEED
+ 0000:17C3       _sprintf
+ 0000:1296       _srand
+ 0000:1806       _stime
+ 0000:31A2       _strcat
+ 0000:31E1       _strchr
+ 0000:321E       _strcmp
+ 0000:324E       _strcpy
+ 0000:3277       _strlen
+ 0000:3296       _strncmp
+ 0000:32CE       _strncpy
+ 0000:32FF       _strupr
+ 0000:189E       _tell
+ 0000:0303       _textattr
+ 0000:02EA       _textbackground
+ 0000:02D5       _textcolor
+ 0000:1846       _time
+ 09E4:23A8       _timezone
+ 0000:1C4F       _tmpnam
+ 0000:1C96       _tolower
+ 09E4:24D0       _tottime
+ 0000:1CC2       _toupper
+ 09E4:23A0       _tzname
+ 0000:3323       _tzset
+ 0000:2738       _ultoa
+ 0000:35F1       _ungetc
+ 0000:2491       _ungetch
+ 0000:19E5       _unixtodos
+ 0000:365C       _unlink
+ 09E4:3022       _user_number
+ 09E4:3024       _view
+ 0000:17E5       _vsprintf
+ 0000:1CF8       _wherex
+ 0000:1D07       _wherey
+ 0000:1D1A       _window
+ 0000:1D80       _write
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 09E4:2490       __argc
+ 09E4:2492       __argv
+ 09E4:1F9E       __atexitcnt
+ 09E4:3030       __atexittbl
+ 0000:0515       __brk
+ 09E4:0089       __brklvl
+ 09E4:006B       __C0argc
+ 09E4:006D       __C0argv
+ 0000:20A2       __c0crtinit
+ 09E4:0071       __C0environ
+ 0000:1FA8       __chmod
+ 0000:1FC5       __close
+ 0000:0321       __CPUTN
+ 0000:20BF       __crtinit
+ 09E4:1FA0       __ctype
+ 0000:0000  Abs  __cvtfak
+ 09E4:22AA       __doserrno
+ 09E4:22AC       __dosErrorToSV
+ 09E4:0075       __envLng
+ 09E4:0077       __envseg
+ 09E4:0079       __envSize
+ 0000:0127       __exit
+ 09E4:20A2       __exitbuf
+ 0000:0107       __exitclean
+ 09E4:20A6       __exitfopen
+ 09E4:20AA       __exitopen
+ 0000:2343       __fgetc
+ 09E4:2268       __fmode
+ 0000:3CDA       __fpure_error_
+ 0000:0F50       __fputc
+ 0000:10DD       __FPUTN
+ 09E4:0085       __heapbase
+ 09E4:008D       __heaptop
+ 09E4:005B       __Int0Vector
+ 09E4:005F       __Int4Vector
+ 09E4:0063       __Int5Vector
+ 09E4:0067       __Int6Vector
+ 0000:2610       __IOERROR
+ 0000:350F       __ISDST
+ 0000:2687       __LONGTOA
+ 0000:1BE9       __MKNAME
+ 0000:0215       __MMODEL
+ 09E4:2386       __monthDay
+ 09E4:30CC       __new_handler
+ 0000:235A       __Nfgetc
+ 0000:246A       __Ngetche
+ 09E4:226A       __notUmask
+ 0000:3CC3       __npure_error_
+ 0000:35EE       __Nungetc
+ 0000:248E       __Nungetch
+ 0000:295F       __open
+ 09E4:2240       __openfd
+ 09E4:007D       __osmajor
+ 09E4:007E       __osminor
+ 09E4:007B       __psp
+ 0000:2A6B       __read
+ 0000:4288       __REALCVT
+ 09E4:24AC       __RealCvtVector
+ 0000:0185       __restorezero
+ 0000:0554       __sbrk
+ 0000:2A87       __scanner
+ 0000:4294       __scanpop
+ 0000:4290       __scanrslt
+ 0000:428C       __scantod
+ 09E4:24AE       __ScanTodVector
+ 0000:2F9A       __scantol
+ 0000:1427       __SCREENIO
+ 0000:14CC       __SCROLL
+ 0000:0000  Abs  __setargv__
+ 0000:0000  Abs  __setenvp__
+ 0000:1582       __setupio
+ 09E4:0081       __StartTime
+ 09E4:2276       __stklen
+ 09E4:20B0       __streams
+ 09E4:30B2       __tmpnum
+ 0000:0000  Abs  __turboCrt
+ 0000:1465       __VALIDATEXY
+ 09E4:007D       __version
+ 09E4:2290       __video
+ 0000:201E       __VideoInt
+ 0000:368C       __VPRINTER
+ 0000:3B5B       __VPTR
+ 0000:3B81       __VRAM
+ 0000:1CEE       __wherexy
+ 0000:3BFA       __write
+ 09E4:228E       __wscroll
+ 0000:1EAE       __xfclose
+ 0000:1EE8       __xfflush
+ 0000:3D10       ___first
+ 0000:3D12       ___last
+ 0000:3D14       ___rover
+
+  Address         Publics by Value
+
+ 0000:0000  Abs  __setargv__
+ 0000:0000  Abs  __turboCrt
+ 0000:0000  Abs  __cvtfak
+ 0000:0000  Abs  __setenvp__
+ 0000:000C  Abs  __AHSHIFT
+ 0000:1000  Abs  __AHINCR
+ 0000:0107       __exitclean
+ 0000:0127       __exit
+ 0000:0185       __restorezero
+ 0000:01FD       _abort
+ 0000:0213       DGROUP@
+ 0000:0215       __MMODEL
+ 0000:0217       _access
+ 0000:0252       _atexit
+ 0000:027F       _close
+ 0000:02AC       _clrscr
+ 0000:02D5       _textcolor
+ 0000:02EA       _textbackground
+ 0000:0303       _textattr
+ 0000:030E       _highvideo
+ 0000:0314       _lowvideo
+ 0000:031A       _normvideo
+ 0000:0321       __CPUTN
+ 0000:0453       _cprintf
+ 0000:0470       _exit
+ 0000:0515       __brk
+ 0000:0554       __sbrk
+ 0000:05C1       _fclose
+ 0000:0670       _fflush
+ 0000:073B       _flushall
+ 0000:0955       _fopen
+ 0000:0987       _freopen
+ 0000:09C0       _fdopen
+ 0000:0AF5       _fread
+ 0000:0B85       _fscanf
+ 0000:0C2D       _fseek
+ 0000:0CAF       _ftell
+ 0000:0CFF       _fwrite
+ 0000:0D8F       _getdate
+ 0000:0DA2       _gettime
+ 0000:0DB5       _gets
+ 0000:0E3F       _gotoxy
+ 0000:0E8F       _movetext
+ 0000:0F35       _printf
+ 0000:0F50       __fputc
+ 0000:0F6E       _fputc
+ 0000:10C6       _fputchar
+ 0000:10DD       __FPUTN
+ 0000:127F       _putch
+ 0000:1296       _srand
+ 0000:12A7       _rand
+ 0000:12CD       _scanf
+ 0000:1427       __SCREENIO
+ 0000:1465       __VALIDATEXY
+ 0000:14CC       __SCROLL
+ 0000:1582       __setupio
+ 0000:15FB       _setvbuf
+ 0000:171A       _sleep
+ 0000:17C3       _sprintf
+ 0000:17E5       _vsprintf
+ 0000:1806       _stime
+ 0000:1846       _time
+ 0000:189E       _tell
+ 0000:18B8       _dostounix
+ 0000:19E5       _unixtodos
+ 0000:1BE9       __MKNAME
+ 0000:1C4F       _tmpnam
+ 0000:1C96       _tolower
+ 0000:1CC2       _toupper
+ 0000:1CEE       __wherexy
+ 0000:1CF8       _wherex
+ 0000:1D07       _wherey
+ 0000:1D1A       _window
+ 0000:1D80       _write
+ 0000:1EAE       __xfclose
+ 0000:1EE8       __xfflush
+ 0000:1F22       _atol
+ 0000:1F97       _atoi
+ 0000:1FA8       __chmod
+ 0000:1FC5       __close
+ 0000:201E       __VideoInt
+ 0000:20A2       __c0crtinit
+ 0000:20BF       __crtinit
+ 0000:21D6       _delay
+ 0000:2217       _div
+ 0000:2223       _eof
+ 0000:2343       __fgetc
+ 0000:235A       __Nfgetc
+ 0000:235D       _fgetc
+ 0000:2445       _fgetchar
+ 0000:2451       _getch
+ 0000:246A       __Ngetche
+ 0000:246D       _getche
+ 0000:248E       __Nungetch
+ 0000:2491       _ungetch
+ 0000:24AD       _getenv
+ 0000:251D       _int86
+ 0000:254E       _int86x
+ 0000:25E7       _ioctl
+ 0000:2610       __IOERROR
+ 0000:264D       _isatty
+ 0000:265E       _lseek
+ 0000:2687       __LONGTOA
+ 0000:2709       _itoa
+ 0000:2738       _ultoa
+ 0000:2755       _ltoa
+ 0000:277F       _memcpy
+ 0000:27A3       _setmem
+ 0000:27C7       _memset
+ 0000:2813       _open
+ 0000:295F       __open
+ 0000:29AD       _read
+ 0000:2A6B       __read
+ 0000:2A87       __scanner
+ 0000:2F9A       __scantol
+ 0000:313C       _segread
+ 0000:315C       _setblock
+ 0000:3178       _setdate
+ 0000:318D       _settime
+ 0000:31A2       _strcat
+ 0000:31E1       _strchr
+ 0000:321E       _strcmp
+ 0000:324E       _strcpy
+ 0000:3277       _strlen
+ 0000:3296       _strncmp
+ 0000:32CE       _strncpy
+ 0000:32FF       _strupr
+ 0000:3323       _tzset
+ 0000:350F       __ISDST
+ 0000:35EE       __Nungetc
+ 0000:35F1       _ungetc
+ 0000:365C       _unlink
+ 0000:368C       __VPRINTER
+ 0000:3B5B       __VPTR
+ 0000:3B81       __VRAM
+ 0000:3BFA       __write
+ 0000:3C45       operator delete(void far*)
+ 0000:3C57       set_new_handler(void(far*)())
+ 0000:3C81       operator new(unsigned int)
+ 0000:3CC3       __npure_error_
+ 0000:3CDA       __fpure_error_
+ 0000:3D10       ___first
+ 0000:3D12       ___last
+ 0000:3D14       ___rover
+ 0000:3E4E       _free
+ 0000:3E4E       _farfree
+ 0000:3F34       _malloc
+ 0000:3F3E       _farmalloc
+ 0000:4097       _realloc
+ 0000:409E       _farrealloc
+ 0000:410C       F_LXMUL@
+ 0000:410C       LXMUL@
+ 0000:4123       N_LDIV@
+ 0000:4126       LDIV@
+ 0000:4126       F_LDIV@
+ 0000:412A       N_LUDIV@
+ 0000:412D       F_LUDIV@
+ 0000:412D       LUDIV@
+ 0000:4132       N_LMOD@
+ 0000:4135       F_LMOD@
+ 0000:4135       LMOD@
+ 0000:413A       N_LUMOD@
+ 0000:413D       LUMOD@
+ 0000:413D       F_LUMOD@
+ 0000:41D1       N_PADD@
+ 0000:41D4       F_PADD@
+ 0000:41D4       PADD@
+ 0000:4200       N_PSUB@
+ 0000:4203       F_PSUB@
+ 0000:4203       PSUB@
+ 0000:4231       N_SCOPY@
+ 0000:4234       F_SCOPY@
+ 0000:4234       SCOPY@
+ 0000:4250       N_LXMUL@
+ 0000:4267       N_PCMP@
+ 0000:4288       __REALCVT
+ 0000:428C       __scantod
+ 0000:4290       __scanrslt
+ 0000:4294       __scanpop
+ 0000:4411       ios::~ios()
+ 0445:0006       _main
+ 0445:0699       menu(int)
+ 0445:0949       choice(char)
+ 0445:0B4C       colorstring(char far*,int)
+ 0445:1381       systemstat()
+ 0445:13B0       prompt(int)
+ 0445:1426       play()
+ 0445:1779       readm()
+ 0445:177E       sendm()
+ 0445:1783       help(int)
+ 0445:19BF       bullet()
+ 0445:19C4       scores()
+ 0445:1A19       settings()
+ 0445:1A1E       end()
+ 0445:1C61       charac()
+ 0445:25E0       massacar()
+ 0445:25E5       armory()
+ 0445:25EA       weapon()
+ 0445:25EF       bazaar()
+ 0445:25F4       kill()
+ 0445:25F9       bank()
+ 0445:2FAE       saor()
+ 0445:2FB3       coral()
+ 0445:2FB8       encode(char)
+ 0445:2FCA       initport()
+ 0445:3261       readdoor()
+ 0445:3412       introansi()
+ 0445:3539       randomize()
+ 0445:3552       RS232::ErrorStatus()
+ 079A:000E       RS232::IdleFunction()
+ 079A:0015       ReadTime()
+ 079A:009D       Bus()
+ 07A9:000D       RS232::FlushRXBuffer()
+ 07A9:004A       RS232::Peek()
+ 07A9:0098       RS232::ErrorName(int)
+ 07A9:01D5       RS232::FormatDebugOutput(char far*,int)
+ 07A9:0311       RS232::Read(long)
+ 07A9:03D4       RS232::Write(int,long)
+ 07A9:049A       RS232::Write(void far*,unsigned int,long,char far*)
+ 07A9:05EF       RS232::Read(void far*,unsigned int,long)
+ 07A9:06E3       RS232::Read(void far*,unsigned int,long,char far*)
+ 07A9:081F       RS232::Break(long)
+ 07A9:0827       RS232::SoftwareOverrunError(int)
+ 07A9:082F       RS232::FlushTXBuffer()
+ 07A9:0837       RS232::RXSpaceFree()
+ 07A9:083F       RS232::TXSpaceUsed()
+ 07A9:0847       RS232::XonXoffHandshaking(int)
+ 07A9:084F       RS232::RtsCtsHandshaking(int)
+ 07A9:0857       RS232::DtrDsrHandshaking(int)
+ 07A9:085F       RS232::Dtr(int)
+ 07A9:0867       RS232::Rts(int)
+ 07A9:086F       RS232::Peek(void far*,unsigned int)
+ 07A9:0877       Settings::Adjust(long,int,int,int,int,int,int,int,int)
+ 083B:0002       BIOSPort::BIOSPort(RS232PortName,long,char,int,int,int,int,int,int,int)
+ 083B:0108       BIOSPort::BIOSPort()
+ 083B:017D       BIOSPort::~BIOSPort()
+ 083B:01AA       BIOSPort::write_settings()
+ 083B:037D       BIOSPort::read_byte()
+ 083B:0404       BIOSPort::write_byte(int)
+ 083B:045D       BIOSPort::Set(long,int,int,int)
+ 083B:049A       BIOSPort::Cd()
+ 083B:04ED       BIOSPort::Ri()
+ 083B:0540       BIOSPort::Cts()
+ 083B:0593       BIOSPort::Dsr()
+ 083B:05E6       BIOSPort::ParityError(int)
+ 083B:0654       BIOSPort::BreakDetect(int)
+ 083B:06C2       BIOSPort::FramingError(int)
+ 083B:0730       BIOSPort::HardwareOverrunError(int)
+ 083B:079E       BIOSPort::FormatDebugOutput(char far*,int)
+ 083B:08D0       BIOSPort::read_buffer(char far*,unsigned int)
+ 083B:0985       BIOSPort::write_buffer(char far*,unsigned int)
+ 083B:0A2E       BIOSPort::TXSpaceFree()
+ 083B:0A81       BIOSPort::RXSpaceUsed()
+ 083B:0AD4       EBIOSPort::EBIOSPort(RS232PortName,long,char,int,int,int,int,int,int,int)
+ 083B:0BD7       EBIOSPort::~EBIOSPort()
+ 083B:0C13       EBIOSPort::FormatDebugOutput(char far*,int)
+ 083B:0C7F       EBIOSPort::read_settings()
+ 083B:0D13       EBIOSPort::write_settings()
+ 083B:0F21       EBIOSPort::Dtr(int)
+ 083B:0F64       EBIOSPort::Rts(int)
+ 083B:0FA7       EBIOSPort::Break(long)
+ 083B:1021       EBIOSPort::Set(long,int,int,int)
+ 083B:105E       RS232::~RS232()
+ 0943:000B       fossil_info::fossil_info(int)
+ 0943:006E       FOSSIL::FOSSIL(RS232PortName,long,char,int,int,int,int,int,int,int)
+ 0943:01EB       FOSSIL::~FOSSIL()
+ 0943:024D       FOSSIL::write_settings()
+ 0943:0447       FOSSIL::FormatDebugOutput(char far*,int)
+ 0943:0533       FOSSIL::Set(long,int,int,int)
+ 0943:0570       FOSSIL::write_byte(int)
+ 0943:05B9       FOSSIL::read_buffer(char far*,unsigned int)
+ 0943:063C       FOSSIL::write_buffer(char far*,unsigned int)
+ 0943:06A3       FOSSIL::TXSpaceFree()
+ 0943:06D0       FOSSIL::TXSpaceUsed()
+ 0943:0720       FOSSIL::RXSpaceUsed()
+ 0943:0750       FOSSIL::RXSpaceFree()
+ 0943:077D       FOSSIL::Break(long)
+ 0943:0812       FOSSIL::XonXoffHandshaking(int)
+ 0943:085B       FOSSIL::RtsCtsHandshaking(int)
+ 0943:08A4       FOSSIL::Dtr(int)
+ 0943:08ED       FOSSIL::Peek(void far*,unsigned int)
+ 0943:0949       FOSSIL::FlushRXBuffer()
+ 0943:0981       FOSSIL::FlushTXBuffer()
+ 09DF:0000       ios::basefield
+ 09E0:0000       ios::adjustfield
+ 09E1:0000       ios::floatfield
+ 09E2:0000       ios::nextbit
+ 09E3:0000       ios::usercount
+ 09E4:0000       DATASEG@
+ 09E4:005B       __Int0Vector
+ 09E4:005F       __Int4Vector
+ 09E4:0063       __Int5Vector
+ 09E4:0067       __Int6Vector
+ 09E4:006B       __C0argc
+ 09E4:006D       __C0argv
+ 09E4:0071       __C0environ
+ 09E4:0075       __envLng
+ 09E4:0077       __envseg
+ 09E4:0079       __envSize
+ 09E4:007B       __psp
+ 09E4:007D       __osmajor
+ 09E4:007D       __version
+ 09E4:007E       __osminor
+ 09E4:007F       _errno
+ 09E4:0081       __StartTime
+ 09E4:0085       __heapbase
+ 09E4:0089       __brklvl
+ 09E4:008D       __heaptop
+ 09E4:0092       _Ports
+ 09E4:00A2       _Port
+ 09E4:00A6       _port_names
+ 09E4:1D70       EBIOSPort::
+ 09E4:1DEC       BIOSPort::
+ 09E4:1E68       rs232::
+ 09E4:1F22       fossil::
+ 09E4:1F9E       __atexitcnt
+ 09E4:1FA0       __ctype
+ 09E4:20A2       __exitbuf
+ 09E4:20A6       __exitfopen
+ 09E4:20AA       __exitopen
+ 09E4:20B0       __streams
+ 09E4:2240       __openfd
+ 09E4:2268       __fmode
+ 09E4:226A       __notUmask
+ 09E4:2276       __stklen
+ 09E4:228E       __wscroll
+ 09E4:2290       __video
+ 09E4:229F       _directvideo
+ 09E4:22AA       __doserrno
+ 09E4:22AC       __dosErrorToSV
+ 09E4:2386       __monthDay
+ 09E4:23A0       _tzname
+ 09E4:23A8       _timezone
+ 09E4:23AC       _daylight
+ 09E4:2490       __argc
+ 09E4:2492       __argv
+ 09E4:24A0       _environ
+ 09E4:24A4       ios::stdioflush
+ 09E4:24AC       __RealCvtVector
+ 09E4:24AE       __ScanTodVector
+ 09E4:24CC       _SPEED
+ 09E4:24CE       _pnum
+ 09E4:24D0       _tottime
+ 09E4:24D2       _handle_name
+ 09E4:24E6       _game
+ 09E4:265C       _player
+ 09E4:3020       _mode
+ 09E4:3022       _user_number
+ 09E4:3024       _view
+ 09E4:3028       _in
+ 09E4:302C       _out
+ 09E4:3030       __atexittbl
+ 09E4:30B2       __tmpnum
+ 09E4:30CC       __new_handler
+
+Program entry point at 0000:0000
+
